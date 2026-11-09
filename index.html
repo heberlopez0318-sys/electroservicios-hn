@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102d46">
+  <meta name="description" content="ElectroServicios HN ofrece instalaciones, reparaciones, mantenimiento y soluciones eléctricas a domicilio en el departamento de Cortés, Honduras.">
+  <title>ElectroServicios HN | Servicios eléctricos en Cortés</title>
+  <style>
+    :root{--navy:#102d46;--navy2:#183f5d;--yellow:#facc15;--ink:#172b3b;--muted:#617282;--paper:#f5f8fb;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1100px,92%);margin:auto}
+    header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:5;box-shadow:0 3px 14px #071b2b30}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.3px}
+    .bolt{width:42px;height:42px;border-radius:12px;background:var(--yellow);color:var(--navy);display:grid;place-items:center;font-size:27px}
+    .brand small{display:block;color:#c8d8e4;font-size:10px;letter-spacing:1.2px}
+    nav{display:flex;gap:20px;font-size:14px;color:#e7eff5}
+    nav a:hover{color:var(--yellow)}
+    .hero{background:linear-gradient(115deg,#102d46 0%,#183f5d 72%,#24516d 100%);color:#fff;padding:76px 0 68px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}
+    .eyebrow{color:var(--yellow);font-weight:700;text-transform:uppercase;letter-spacing:1.5px;font-size:12px}
+    h1{font-size:clamp(34px,5vw,56px);line-height:1.08;margin:12px 0 18px}
+    .hero p{font-size:18px;color:#dbe7ef;max-width:560px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    .btn{display:inline-flex;justify-content:center;align-items:center;padding:13px 19px;border-radius:10px;font-weight:800;border:2px solid transparent}
+    .btn-yellow{background:var(--yellow);color:var(--navy)}
+    .btn-outline{border-color:#a9bdcc;color:#fff}
+    .hero-art{min-height:270px;border:1px solid #ffffff24;border-radius:24px;background:linear-gradient(145deg,#ffffff12,#ffffff05);display:grid;place-items:center;padding:25px}
+    .panel{width:min(280px,100%);background:#f8fafc;border-radius:15px;padding:18px;box-shadow:0 18px 50px #06172766;color:var(--navy)}
+    .panel-top{display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:800;margin-bottom:14px}
+    .breaker{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}
+    .switch{height:76px;background:#e4ebf0;border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;font-size:10px;font-weight:700}
+    .switch i{width:13px;height:29px;border-radius:5px;background:#183f5d;display:block;box-shadow:inset 0 -7px #0c263b}
+    .panel-foot{margin-top:14px;border-top:1px solid #d8e1e8;padding-top:10px;color:#657889;font-size:11px;text-align:center}
+    section{padding:64px 0}
+    .section-head{text-align:center;max-width:680px;margin:0 auto 32px}
+    h2{font-size:clamp(26px,3vw,36px);line-height:1.2;margin:0 0 10px;color:var(--navy)}
+    .section-head p{color:var(--muted);margin:0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:#fff;border:1px solid #e3eaf0;border-radius:16px;padding:22px;box-shadow:0 5px 18px #102d4608}
+    .ico{width:46px;height:46px;border-radius:12px;background:#fff5c7;display:grid;place-items:center;font-size:23px;margin-bottom:14px}
+    .card h3{margin:0 0 7px;color:var(--navy);font-size:18px}
+    .card p{margin:0;color:var(--muted);font-size:14px}
+    .coverage{background:#eaf1f6}
+    .coverage-box{background:#fff;border-radius:18px;padding:28px;display:flex;align-items:center;gap:18px;border:1px solid #dce6ee}
+    .coverage-box .pin{font-size:32px}
+    .coverage-box p{margin:4px 0 0;color:var(--muted)}
+    .request{background:#fff}
+    .form-wrap{max-width:760px;margin:auto;background:var(--paper);padding:26px;border-radius:18px;border:1px solid #e1e9ef}
+    form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    label{font-size:13px;font-weight:700;color:var(--navy);display:block;margin-bottom:6px}
+    input,select,textarea{width:100%;border:1px solid #cbd7e0;border-radius:9px;padding:12px;font:inherit;background:#fff;color:var(--ink)}
+    textarea{min-height:110px;resize:vertical}
+    .full{grid-column:1/-1}
+    .submit{width:100%;border:0;cursor:pointer;font-size:16px}
+    .note{font-size:12px;color:var(--muted);margin:12px 0 0}
+    footer{background:var(--navy);color:#dbe7ef;padding:30px 0}
+    .foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+    .foot strong{color:#fff}
+    .wa-float{position:fixed;right:18px;bottom:18px;background:#1fa855;color:#fff;border-radius:999px;padding:13px 18px;font-weight:800;box-shadow:0 8px 24px #071b2b45;z-index:8}
+    @media(max-width:760px){nav{display:none}.hero{padding:54px 0}.hero-grid{grid-template-columns:1fr}.hero-art{min-height:220px}.cards{grid-template-columns:1fr 1fr}section{padding:48px 0}}
+    @media(max-width:520px){.cards{grid-template-columns:1fr}form{grid-template-columns:1fr}.full{grid-column:auto}.form-wrap{padding:18px}.coverage-box{align-items:flex-start;padding:20px}.hero p{font-size:16px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#inicio"><span class="bolt">ϟ</span><span>ElectroServicios HN<small>SERVICIOS ELÉCTRICOS PROFESIONALES</small></span></a>
+    <nav><a href="#servicios">Servicios</a><a href="#cobertura">Cobertura</a><a href="#solicitar">Solicitar servicio</a></nav>
+  </div>
+</header>
+<main>
+  <section class="hero" id="inicio">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Atención a domicilio · Departamento de Cortés</div>
+        <h1>Soluciones eléctricas profesionales.</h1>
+        <p>Instalaciones, reparaciones, mantenimiento y proyectos eléctricos para hogares, comercios e industrias.</p>
+        <div class="actions">
+          <a class="btn btn-yellow" href="#solicitar">Solicitar servicio</a>
+          <a class="btn btn-outline" href="https://wa.me/50495456869?text=Hola%2C%20necesito%20informaci%C3%B3n%20sobre%20un%20servicio%20el%C3%A9ctrico." target="_blank" rel="noopener">Escribir por WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Ilustración de tablero eléctrico">
+        <div class="panel">
+          <div class="panel-top"><span>TABLERO ELÉCTRICO</span><span>⚡</span></div>
+          <div class="breaker">
+            <div class="switch"><i></i>L1</div><div class="switch"><i></i>L2</div><div class="switch"><i></i>L3</div><div class="switch"><i></i>L4</div>
+          </div>
+          <div class="panel-foot">INSTALACIÓN · MANTENIMIENTO · SEGURIDAD</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="servicios">
+    <div class="wrap">
+      <div class="section-head"><h2>Servicios eléctricos</h2><p>Cuéntanos qué necesitas y coordinaremos contigo la atención de tu proyecto.</p></div>
+      <div class="cards">
+        <article class="card"><div class="ico">🏠</div><h3>Electricidad residencial</h3><p>Instalaciones, tomacorrientes, iluminación, revisión de circuitos y solución de fallas.</p></article>
+        <article class="card"><div class="ico">🏢</div><h3>Electricidad comercial</h3><p>Instalaciones y mantenimiento eléctrico para locales, oficinas y pequeños negocios.</p></article>
+        <article class="card"><div class="ico">🏭</div><h3>Electricidad industrial</h3><p>Diagnóstico y soporte en motores, controles y sistemas eléctricos industriales.</p></article>
+        <article class="card"><div class="ico">⚡</div><h3>Paneles eléctricos</h3><p>Armado, adecuación, instalación y mantenimiento de tableros eléctricos.</p></article>
+        <article class="card"><div class="ico">🛠️</div><h3>Reparaciones y mantenimiento</h3><p>Inspección, diagnóstico y mantenimiento preventivo o correctivo.</p></article>
+        <article class="card"><div class="ico">🎛️</div><h3>Automatización y controles</h3><p>Asistencia en sensores, contactores, variadores y sistemas de control.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="coverage" id="cobertura">
+    <div class="wrap">
+      <div class="section-head"><h2>Atendemos en Cortés</h2><p>Servicio a domicilio sujeto a coordinación y disponibilidad.</p></div>
+      <div class="coverage-box"><div class="pin">📍</div><div><strong>Base de operaciones: Villanueva, Cortés, Honduras</strong><p>Cobertura inicial: municipios del departamento de Cortés. Consulta disponibilidad para tu localidad.</p></div></div>
+    </div>
+  </section>
+  <section class="request" id="solicitar">
+    <div class="wrap">
+      <div class="section-head"><h2>Solicita un servicio</h2><p>Completa los datos y se abrirá WhatsApp con tu solicitud lista para enviar.</p></div>
+      <div class="form-wrap">
+        <form id="requestForm">
+          <div><label for="name">Nombre completo *</label><input id="name" name="name" autocomplete="name" required placeholder="Tu nombre"></div>
+          <div><label for="phone">Tu teléfono *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="Tu número de contacto"></div>
+          <div><label for="municipality">Municipio *</label><input id="municipality" name="municipality" required placeholder="Ej. Villanueva"></div>
+          <div><label for="service">Tipo de servicio *</label><select id="service" name="service" required><option value="">Selecciona un servicio</option><option>Electricidad residencial</option><option>Electricidad comercial</option><option>Electricidad industrial</option><option>Paneles eléctricos</option><option>Reparación de fallas</option><option>Mantenimiento eléctrico</option><option>Automatización y controles</option><option>Otro</option></select></div>
+          <div class="full"><label for="address">Dirección o punto de referencia *</label><input id="address" name="address" required placeholder="Colonia, barrio, punto de referencia"></div>
+          <div class="full"><label for="details">Describe el trabajo que necesitas *</label><textarea id="details" name="details" required placeholder="Explica brevemente qué sucede o qué instalación necesitas."></textarea></div>
+          <div class="full"><button class="btn btn-yellow submit" type="submit">Enviar solicitud por WhatsApp</button><p class="note">Al pulsar, se abrirá WhatsApp para que revises y envíes el mensaje. No se guardan datos en esta página.</p></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap foot"><div><strong>ElectroServicios HN</strong><br><small>Soluciones eléctricas profesionales · Cortés, Honduras</small></div><div>WhatsApp: +504 9545-6869</div><div><small>© <span id="year"></span> ElectroServicios HN</small></div></div>
+</footer>
+<a class="wa-float" href="https://wa.me/50495456869?text=Hola%2C%20quiero%20solicitar%20un%20servicio%20el%C3%A9ctrico." target="_blank" rel="noopener">WhatsApp</a>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('requestForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const v = id => document.getElementById(id).value.trim();
+    const msg = [
+      'Hola, ElectroServicios HN. Quiero solicitar un servicio eléctrico.',
+      '',
+      'Nombre: ' + v('name'),
+      'Mi teléfono: ' + v('phone'),
+      'Municipio: ' + v('municipality'),
+      'Servicio: ' + v('service'),
+      'Dirección: ' + v('address'),
+      'Descripción: ' + v('details')
+    ].join('\n');
+    window.open('https://wa.me/50495456869?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+  });
+</script>
+</body>
+</html>
